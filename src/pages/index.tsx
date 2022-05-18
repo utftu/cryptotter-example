@@ -2,6 +2,7 @@ import type {NextPage} from 'next';
 import {useFfw, useInitFfw} from 'ffw';
 import {Input} from 'baseui/input';
 import {CryptotterButton} from 'cryptotter-react';
+import {createTransaction} from '../connections';
 
 const Home: NextPage = () => {
   const ffw = useInitFfw({
@@ -30,7 +31,20 @@ const Home: NextPage = () => {
           <div>Total price:</div>
           <div>{ffw.f.count.value * 0.001}$</div>
         </div>
-        <CryptotterButton className={'mt-8'}>
+        <CryptotterButton
+          className={'mt-8'}
+          onSuccess={() => {}}
+          onClick={async () => {
+            const transaction = createTransaction({
+              amount: 0.01 * ffw.f.count.value,
+              currency: 'USD',
+              name: 'test cryptotter',
+            });
+            return {
+              transaction,
+            };
+          }}
+        >
           Buy with cryptotter
         </CryptotterButton>
       </div>

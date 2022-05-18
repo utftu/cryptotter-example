@@ -21,7 +21,7 @@ async function createTransaction(req, res) {
       }),
     }
   );
-  res.status(200).json(response.json());
+  res.status(200).json((await response.json()).id);
 }
 
 export default createTransaction;
