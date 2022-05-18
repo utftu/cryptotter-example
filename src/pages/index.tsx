@@ -1,7 +1,7 @@
 import type {NextPage} from 'next';
 import {useFfw, useInitFfw} from 'ffw';
 import {Input} from 'baseui/input';
-import {CryptotterButton} from 'cryptotter-react';
+import {CryptotterButton} from 'cryptotter-react/dist/esm/dev.js';
 import {createTransaction} from '../connections';
 
 const Home: NextPage = () => {
@@ -34,8 +34,9 @@ const Home: NextPage = () => {
         <CryptotterButton
           className={'mt-8'}
           onSuccess={() => {}}
+          type={'popup'}
           onClick={async () => {
-            const transaction = createTransaction({
+            const transaction = await createTransaction({
               amount: 0.01 * ffw.f.count.value,
               currency: 'USD',
               name: 'test cryptotter',
