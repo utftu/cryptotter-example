@@ -10,13 +10,13 @@ specifiers:
   autoprefixer: ^10.4.7
   baseui: ^11.0.3
   cross-fetch: ^3.1.5
-  cryptotter-react: ^1.0.0
+  cryptotter-react: ^1.0.3
   eslint: 8.15.0
   eslint-config-next: 12.1.6
   ffw: ^1.0.23
   next: 12.1.6
   node-fetch: ^3.2.4
-  postcss: ^8.4.13
+  postcss: ^8.4.14
   prettier: ^2.6.2
   react: 18.1.0
   react-dom: 18.1.0
@@ -31,7 +31,7 @@ dependencies:
   '@types/styletron-standard': 2.0.2
   baseui: 11.0.3_6tvz3ywzsfg6qo65qfhdumuqkq
   cross-fetch: 3.1.5
-  cryptotter-react: 1.0.2
+  cryptotter-react: 1.0.3
   ffw: 1.0.23
   next: 12.1.6_ef5jwxihqo6n7gxfmzogljlgcm
   node-fetch: 3.2.4
@@ -45,25 +45,25 @@ devDependencies:
   '@types/node': 17.0.34
   '@types/react': 18.0.9
   '@types/react-dom': 18.0.4
-  autoprefixer: 10.4.7_postcss@8.4.13
+  autoprefixer: 10.4.7_postcss@8.4.14
   eslint: 8.15.0
   eslint-config-next: 12.1.6_6vdljae35l7howjttefzzsim3e
-  postcss: 8.4.13
+  postcss: 8.4.14
   tailwindcss: 3.0.24
   typescript: 4.6.4
 
 packages:
 
-  /@babel/runtime-corejs3/7.17.9:
-    resolution: {integrity: sha512-WxYHHUWF2uZ7Hp1K+D1xQgbgkGUfA+5UPOegEXGt2Y5SMog/rYCVaifLZDbw8UkNXozEqqrZTy6bglL7xTaCOw==}
+  /@babel/runtime-corejs3/7.18.0:
+    resolution: {integrity: sha512-G5FaGZOWORq9zthDjIrjib5XlcddeqLbIiDO3YQsut6j7aGf76xn0umUC/pA6+nApk3hQJF4JzLzg5PCl6ewJg==}
     engines: {node: '>=6.9.0'}
     dependencies:
       core-js-pure: 3.22.5
       regenerator-runtime: 0.13.9
     dev: true
 
-  /@babel/runtime/7.17.9:
-    resolution: {integrity: sha512-lSiBBvodq29uShpWGNbgFdKYNiFDo5/HIYsaCEY9ff4sb10x9jizo2+pRrSyF4jKZCXqgzuqBOQKbUm90gQwJg==}
+  /@babel/runtime/7.18.0:
+    resolution: {integrity: sha512-YMQvx/6nKEaucl0MY56mwIG483xk8SDNdlUwb2Ts6FUpr7fm85DxEmsY18LXBNhcTz6tO6JwZV8w1W06v8UKeg==}
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.9
@@ -445,8 +445,8 @@ packages:
     resolution: {integrity: sha512-o/HelwhuKpTj/frsOsbNLNgnNGVIFsVP/SW2BSF14gVl7kAfMOJ6/8wUAUvG1R1NHKrfG+2sHZTu0yauT1qBrA==}
     engines: {node: '>=6.0'}
     dependencies:
-      '@babel/runtime': 7.17.9
-      '@babel/runtime-corejs3': 7.17.9
+      '@babel/runtime': 7.18.0
+      '@babel/runtime-corejs3': 7.18.0
     dev: true
 
   /array-includes/3.1.5:
@@ -496,7 +496,7 @@ packages:
       core-js: 2.6.12
     dev: false
 
-  /autoprefixer/10.4.7_postcss@8.4.13:
+  /autoprefixer/10.4.7_postcss@8.4.14:
     resolution: {integrity: sha512-ypHju4Y2Oav95SipEcCcI5J7CGPuvz8oat7sUtYj3ClK44bldfvtvcxK6IEK++7rqB7YchDGzweZIBG+SD0ZAA==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
@@ -508,7 +508,7 @@ packages:
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
-      postcss: 8.4.13
+      postcss: 8.4.14
       postcss-value-parser: 4.2.0
     dev: true
 
@@ -697,8 +697,8 @@ packages:
       which: 2.0.2
     dev: true
 
-  /cryptotter-react/1.0.2:
-    resolution: {integrity: sha512-snC7tVwZdo8LL+u3pfWKnrDk3nA284C0lZDwEuzPj+eTnr7cW5rqLRwb8vYwCl6GbcEhwXDZ8sfTyedal2GWOA==}
+  /cryptotter-react/1.0.3:
+    resolution: {integrity: sha512-5LDWjhB8LtP/c/sLHxtthJ+Pxze10MU7L0Gw3RIge24xe5omgjgR4HectARa2xM/p4Zsou90Rbbb2FJX2fNfSg==}
     dependencies:
       esbuild: 0.14.39
       next: 12.1.6_ef5jwxihqo6n7gxfmzogljlgcm
@@ -1067,7 +1067,7 @@ packages:
   /dom-helpers/5.2.1:
     resolution: {integrity: sha512-nRCa7CK3VTrM2NmGkIy4cbK7IZlgBE/PYMn55rrXefr5xXDP0LdtfPnblFDoVdcAfslJ7or6iqAUnx0CCGIWQA==}
     dependencies:
-      '@babel/runtime': 7.17.9
+      '@babel/runtime': 7.18.0
       csstype: 3.1.0
     dev: false
 
@@ -1359,7 +1359,7 @@ packages:
       eslint-import-resolver-typescript: 2.7.1_gwd37gqv3vjv3xlpl7ju3ag2qu
       eslint-plugin-import: 2.26.0_cubvsak2fflmoxzlyy3qtfibly
       eslint-plugin-jsx-a11y: 6.5.1_eslint@8.15.0
-      eslint-plugin-react: 7.29.4_eslint@8.15.0
+      eslint-plugin-react: 7.30.0_eslint@8.15.0
       eslint-plugin-react-hooks: 4.5.0_eslint@8.15.0
       next: 12.1.6_ef5jwxihqo6n7gxfmzogljlgcm
       typescript: 4.6.4
@@ -1459,7 +1459,7 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
     dependencies:
-      '@babel/runtime': 7.17.9
+      '@babel/runtime': 7.18.0
       aria-query: 4.2.2
       array-includes: 3.1.5
       ast-types-flow: 0.0.7
@@ -1483,8 +1483,8 @@ packages:
       eslint: 8.15.0
     dev: true
 
-  /eslint-plugin-react/7.29.4_eslint@8.15.0:
-    resolution: {integrity: sha512-CVCXajliVh509PcZYRFyu/BoUEz452+jtQJq2b3Bae4v3xBUWPLCmtmBM+ZinG4MzwmxJgJ2M5rMqhqLVn7MtQ==}
+  /eslint-plugin-react/7.30.0_eslint@8.15.0:
+    resolution: {integrity: sha512-RgwH7hjW48BleKsYyHK5vUAvxtE9SMPDKmcPRQgtRCYaZA0XQPt5FSkrU3nhz5ifzMZcA8opwmRJ2cmOO8tr5A==}
     engines: {node: '>=4'}
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
@@ -2391,7 +2391,7 @@ packages:
     resolution: {integrity: sha512-pQKtpZGmsZrW8UUpQMAnR7s3ppHeMQVNyMDKtUyKwuvDmklzcEyM5Kllb3JyE/sE/x7arDmyd35i+4vp99H6sQ==}
     engines: {node: '>=10'}
     dependencies:
-      '@babel/runtime': 7.17.9
+      '@babel/runtime': 7.18.0
     dev: false
 
   /popper.js/1.16.1:
@@ -2399,17 +2399,17 @@ packages:
     deprecated: You can find the new Popper v2 at @popperjs/core, this package is dedicated to the legacy v1
     dev: false
 
-  /postcss-js/4.0.0_postcss@8.4.13:
+  /postcss-js/4.0.0_postcss@8.4.14:
     resolution: {integrity: sha512-77QESFBwgX4irogGVPgQ5s07vLvFqWr228qZY+w6lW599cRlK/HmnlivnnVUxkjHnCu4J16PDMHcH+e+2HbvTQ==}
     engines: {node: ^12 || ^14 || >= 16}
     peerDependencies:
       postcss: ^8.3.3
     dependencies:
       camelcase-css: 2.0.1
-      postcss: 8.4.13
+      postcss: 8.4.14
     dev: true
 
-  /postcss-load-config/3.1.4_postcss@8.4.13:
+  /postcss-load-config/3.1.4_postcss@8.4.14:
     resolution: {integrity: sha512-6DiM4E7v4coTE4uzA8U//WhtPwyhiim3eyjEMFCnUpzbrkK9wJHgKDT2mR+HbtSrd/NubVaYTOpSpjUl8NQeRg==}
     engines: {node: '>= 10'}
     peerDependencies:
@@ -2422,17 +2422,17 @@ packages:
         optional: true
     dependencies:
       lilconfig: 2.0.5
-      postcss: 8.4.13
+      postcss: 8.4.14
       yaml: 1.10.2
     dev: true
 
-  /postcss-nested/5.0.6_postcss@8.4.13:
+  /postcss-nested/5.0.6_postcss@8.4.14:
     resolution: {integrity: sha512-rKqm2Fk0KbA8Vt3AdGN0FB9OBOMDVajMG6ZCf/GoHgdxUJ4sBFp0A/uMIRm+MJUdo33YXEtjqIz8u7DAp8B7DA==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.2.14
     dependencies:
-      postcss: 8.4.13
+      postcss: 8.4.14
       postcss-selector-parser: 6.0.10
     dev: true
 
@@ -2448,8 +2448,8 @@ packages:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
     dev: true
 
-  /postcss/8.4.13:
-    resolution: {integrity: sha512-jtL6eTBrza5MPzy8oJLFuUscHDXTV5KcLlqAWHl5q5WYRfnNRGSmOZmOZ1T6Gy7A99mOZfqungmZMpMmCVJ8ZA==}
+  /postcss/8.4.14:
+    resolution: {integrity: sha512-E398TUmfAYFPBSdzgeieK2Y1+1cpdxJx8yXbK/m57nRhKSmk1GB2tO4lbLBtlkfPQTDKfe4Xqv1ASWPpayPEig==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.4
@@ -2513,7 +2513,7 @@ packages:
     peerDependencies:
       react: ^15.3.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || 18
     dependencies:
-      '@babel/runtime': 7.17.9
+      '@babel/runtime': 7.18.0
       react: 18.1.0
     dev: false
 
@@ -2549,7 +2549,7 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@babel/runtime': 7.17.9
+      '@babel/runtime': 7.18.0
       '@types/react': 18.0.9
       focus-lock: 0.11.2
       prop-types: 15.8.1
@@ -2591,7 +2591,7 @@ packages:
   /react-multi-ref/1.0.0:
     resolution: {integrity: sha512-LJuQXEabnv8JLcvcWeJcTogxG4eXVFiPfQ9CECuwWUbfJdrVpPf13m9RxmImyJS0J99BWokGn7dlR1dR06XPDw==}
     dependencies:
-      '@babel/runtime': 7.17.9
+      '@babel/runtime': 7.18.0
     dev: false
 
   /react-range/1.8.12_ef5jwxihqo6n7gxfmzogljlgcm:
@@ -2636,7 +2636,7 @@ packages:
       react: ^15.3.0 || ^16.0.0-alpha || 18
       react-dom: ^15.3.0 || ^16.0.0-alpha || 18
     dependencies:
-      '@babel/runtime': 7.17.9
+      '@babel/runtime': 7.18.0
       clsx: 1.1.1
       dom-helpers: 5.2.1
       loose-envify: 1.4.0
@@ -2653,7 +2653,7 @@ packages:
       react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || 18
       react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || 18
     dependencies:
-      '@babel/runtime': 7.17.9
+      '@babel/runtime': 7.18.0
       memoize-one: 5.2.1
       react: 18.1.0
       react-dom: 18.1.0_react@18.1.0
@@ -2905,10 +2905,10 @@ packages:
       normalize-path: 3.0.0
       object-hash: 3.0.0
       picocolors: 1.0.0
-      postcss: 8.4.13
-      postcss-js: 4.0.0_postcss@8.4.13
-      postcss-load-config: 3.1.4_postcss@8.4.13
-      postcss-nested: 5.0.6_postcss@8.4.13
+      postcss: 8.4.14
+      postcss-js: 4.0.0_postcss@8.4.14
+      postcss-load-config: 3.1.4_postcss@8.4.14
+      postcss-nested: 5.0.6_postcss@8.4.14
       postcss-selector-parser: 6.0.10
       postcss-value-parser: 4.2.0
       quick-lru: 5.1.1
