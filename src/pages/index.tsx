@@ -4,6 +4,7 @@ import {Input} from 'baseui/input';
 import {CryptotterButton} from 'cryptotter-react/dist/esm/dev.js';
 import {createTransaction} from '../connections';
 import {Select} from 'baseui/select';
+import Float from '../utils/float';
 
 const typeOptions = [
   {label: 'Popup', value: 'popup'},
@@ -35,11 +36,11 @@ const Home: NextPage = () => {
         <div className={'mt-8 self-center'}>Virtual product for test</div>
         <div className={'mt-8 grid grid-cols-2 gap-8'}>
           <div>Price:</div>
-          <div>0.001$</div>
+          <div>0.1$</div>
           <div>Count:</div>
           <Input {...ffw.f.count.getInput()} type={'number'} />
           <div>Total price:</div>
-          <div>{ffw.f.count.value * 0.001}$</div>
+          <div>{Float.mul(ffw.f.count.value, 0.1)}$</div>
           <div>Type of payment page</div>
           <Select
             options={typeOptions}
@@ -53,12 +54,14 @@ const Home: NextPage = () => {
         </div>
         <CryptotterButton
           className={'mt-8'}
-          onSuccess={() => {}}
+          onSuccess={(data) => {
+            console.log('-----', 'succcess data', data);
+          }}
           type={ffw.f.type.value}
           payOrigin={process.env['NEXT_PUBLIC_PAY']}
           onClick={async () => {
             const transaction = await createTransaction({
-              amount: 0.01 * ffw.f.count.value,
+              amount: Float.mul(ffw.f.count.value, 0.1),
               currency: 'USD',
               name: 'test cryptotter',
             });
