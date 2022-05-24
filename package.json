@@ -14,7 +14,7 @@
     "@types/styletron-standard": "^2.0.2",
     "baseui": "^11.0.3",
     "cross-fetch": "^3.1.5",
-    "cryptotter-react": "^1.0.3",
+    "cryptotter-react": "^1.0.4",
     "ffw": "^1.0.23",
     "next": "12.1.6",
     "node-fetch": "^3.2.4",

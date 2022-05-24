@@ -24,11 +24,6 @@ async function createTransaction(req, res) {
     }
   );
   const data = await response.json();
-  // console.log(
-  //   '-----',
-  //   data.detail.map((value) => value)
-  // );
-  // console.log('-----', 'data', data);
   res.status(200).json(data.id);
 }
 
