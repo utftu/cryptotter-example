@@ -29,13 +29,7 @@ const Home: NextPage = () => {
   return (
     <div className={'grow flex justify-center items-center'}>
       <div className={'grow flex flex-col max-w-xs'}>
-        <img
-          className={'self-center'}
-          width={100}
-          src={
-            'https://berezovski.by/wp-content/uploads/2018/07/Test-Logo-Circle-black-transparent.png'
-          }
-        />
+        <img className={'self-center'} width={100} src={'/test.png'} />
         <Show show={transaction}>
           <div className={'mt-4 flex flex-col items-center'}>
             <div>Transaction is successful</div>
